@@ -1,0 +1,63 @@
+<!--
+Name -- Nelson Leopold
+Date -- 9/2/2020
+This program does -- This program takes your name and two numbers, then returns a welcome message and a user selected calculation on those numbers.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+            body {
+                background-color: tan;
+                text-align: center;
+                font-weight: bold;
+            }
+            h1 {
+                color: green;
+            }
+            .alignleft {
+                float: left;
+            }
+            .alignright {
+                float: right;
+            }
+            #userInput {
+                width: 300px;
+                margin:auto;
+            }
+            input[type=submit]{
+                background-color: rgb(192, 190, 190);
+                border: 1px solid grey;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>PHP - Simple Calculator Program</h1>
+
+        <form action="simpleCalculator.php" method="post">
+            <div id="userInput">
+                <label class="alignleft">Name:</label>
+                <input type="text" class="alignright" name="name"><br><br>
+                <label class="alignleft">First Number:</label>
+                <input type="number" class="alignright" name="fnumber"><br><br>
+                <lable class="alignleft">Second Number:</lable>
+                <input type="number" class="alignright" name="snumber"><br><br>
+            </div>
+            
+
+            <div id="calcOperations">
+                <input type="submit" name="operand" value="Add">
+                <input type="submit" name="operand" value="Subtract">
+                <input type="submit" name="operand" value="Multiply">
+                <input type="submit" name="operand" value="Divide">
+                <input type="submit" name="operand" value="Modulus">
+                <input type="submit" name="operand" value="Exponentiation">
+            </div>
+                        
+        </form>
+        
+    </body>
+</html>

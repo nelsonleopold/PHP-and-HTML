@@ -1,0 +1,41 @@
+<!--
+Name Nelson Leopold
+Date 8/25/2020
+This program does -- This program creates an HTML page that takes a name as input then displays a short message.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>What's your name?</title>
+        <style>
+            form {
+                margin:auto;
+                width:20%;
+                padding: 10px;
+                border: 1px solid rgb(136, 134, 134);
+            }
+            input {
+                background-color: rgb(231, 213, 189);
+            }
+            input[type=submit] {
+                background-image:linear-gradient(rgb(231, 213, 189), rgb(156, 143, 126));
+            }
+            body {
+                text-align: center;
+                background-color: rgb(231, 213, 189);
+            }
+        </style>
+    </head>
+    <body>
+    <h1>What's your name?</h1>
+    <h3>Creating a form for user input</h3>
+
+    <form action="hiUser.php" method="post">
+        <label for="firstName">Please type your first name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br>
+        <input type="submit" value="Submit Query">
+    </form>
+    
+    </body>
+</html>
