@@ -1,0 +1,47 @@
+<!--
+Name Nelson Leopold
+Date 9/14/2020
+This program does -- This program asks for different catagories of responses from user, then makes a story. Like a madlib.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Little Boy Story</title>
+        <style>
+            body {
+                background-color: lightblue;
+                text-align: center;
+            }
+        </style>>
+    </head>
+    <body>
+        <h1>Little Boy Story</h1>
+        <h3>Enter the values in the textboxes, I will create a story for you.</h3>
+        <form action="storyPHP.php" method="POST">
+            <label>Color:</label>
+            <input type="text" id="color" name="color"><br>
+            <label>Instrument:</label>
+            <input type="text" id="instrument" name="instrument"><br>
+            <label>Animal:</label>
+            <input type="text" id="animal" name="animal"><br>
+            <label>Another animal:</label>
+            <input type="text" id="anotherAnimal" name="anotherAnimal"><br>
+            <label>Yet another animal:</label>
+            <input type="text" id="yetAnotherAnimal" name="yetAnotherAnimal"><br>
+            <label>Place:</label>
+            <input type="text" id="place" name="place"><br>
+            <label>Vegetable:</label>
+            <input type="text" id="vegetable" name="vegetable"><br>
+            <label>A structure:</label>
+            <input type="text" id="aStructure" name="aStructure"><br>
+            <label>Action:</label>
+            <input type="text" id="action" name="action"><br>
+            <input type="submit" value="Get the Story">
+        </form>
+        <?php
+            echo("Hello World");
+        ?>
+
+    </body>
+</html>
