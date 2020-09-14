@@ -13,30 +13,43 @@ This program does -- This program asks for different catagories of responses fro
                 background-color: lightblue;
                 text-align: center;
             }
-        </style>>
+            input[type=submit]{
+                background-color: rgb(224, 223, 223);
+                border: 1px solid rgb(165, 163, 163);
+            }
+        </style>
     </head>
     <body>
         <h1>Little Boy Story</h1>
         <h3>Enter the values in the textboxes, I will create a story for you.</h3>
         <form action="storyPHP.php" method="POST">
-            <label>Color:</label>
+            <label><b>Color:</b></label>
             <input type="text" id="color" name="color"><br>
-            <label>Instrument:</label>
+            <br>
+            <label><b>Instrument:</b></label>
             <input type="text" id="instrument" name="instrument"><br>
-            <label>Animal:</label>
+            <br>
+            <label><b>Animal:</b></label>
             <input type="text" id="animal" name="animal"><br>
-            <label>Another animal:</label>
+            <br>
+            <label><b>Another animal:</b></label>
             <input type="text" id="anotherAnimal" name="anotherAnimal"><br>
-            <label>Yet another animal:</label>
+            <br>
+            <label><b>Yet another animal:</b></label>
             <input type="text" id="yetAnotherAnimal" name="yetAnotherAnimal"><br>
-            <label>Place:</label>
+            <br>
+            <label><b>Place:</b></label>
             <input type="text" id="place" name="place"><br>
-            <label>Vegetable:</label>
+            <br>
+            <label><b>Vegetable:</b></label>
             <input type="text" id="vegetable" name="vegetable"><br>
-            <label>A structure:</label>
+            <br>
+            <label><b>A structure:</b></label>
             <input type="text" id="aStructure" name="aStructure"><br>
-            <label>Action:</label>
+            <br>
+            <label><b>Action:</b></label>
             <input type="text" id="action" name="action"><br>
+            <br>
             <input type="submit" value="Get the Story">
         </form>
         <?php
